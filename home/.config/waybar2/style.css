@@ -1,0 +1,165 @@
+@import "mocha.css";
+
+* {
+  /* font-family: Nerd Font; */
+  font-family:
+    "Fira Code", "Noto Sans Mono", "Font Awesome 6 Free",
+    "Font Awesome 6 Brands", monospace;
+  font-size: 0.8rem;
+  min-height: 0;
+}
+
+#waybar {
+  /* background: @base; */
+  background: rgba(0, 0, 0, 0);
+  color: @text;
+}
+
+/* General Settings */
+#window,
+#network,
+#scratchpad,
+#backlight,
+#clock,
+#idle_inhibitor,
+#battery,
+#pulseaudio,
+#custom-lock,
+#custom-media,
+#workspaces,
+#power-profiles-daemon,
+#custom-power {
+  background-color: @surface0;
+  /* top right bottom left */
+  padding: 0 0.5rem 0rem 0.5rem;
+  margin: 0 0 0 0;
+}
+
+/* Workspaces */
+#workspaces {
+  border-radius: 1.5rem;
+}
+#workspaces button {
+  color: @lavender;
+  border-radius: 1rem;
+  padding: 0.4rem;
+}
+#workspaces button.focused {
+  color: @sky;
+}
+#workspaces button:hover {
+  color: @red;
+  background-color: @surface0;
+  border-radius: 1rem;
+}
+
+/* Media */
+#custom-media {
+  background-color: @green;
+  color: @mantle;
+  padding: 0.5rem 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  border-radius: 1rem;
+}
+
+/* Idle Inhibitor */
+#idle_inhibitor {
+  background-color: @surface0;
+  border-radius: 1rem 0rem 0rem 1rem;
+  margin-left: 1rem;
+}
+#idle_inhibitor.activated {
+  background-color: @red;
+  color: @mantle;
+}
+
+/* Power Profiles */
+#power-profiles-daemon {
+  /* padding-right: 5px; */
+  /* padding-left: 5px; */
+}
+#power-profiles-daemon.performance {
+  background-color: @red;
+  color: @text;
+}
+#power-profiles-daemon.balanced {
+  background-color: @blue;
+  color: @text;
+}
+#power-profiles-daemon.power-saver {
+  background-color: @green;
+  color: @crust;
+}
+
+/* Clock */
+#clock {
+  color: @blue;
+  border-radius: 0px 1rem 1rem 0px;
+  margin-right: 0rem;
+}
+
+/* Battery */
+#battery {
+  color: @green;
+}
+#battery.charging {
+  color: @green;
+}
+#battery.warning:not(.charging) {
+  color: @red;
+}
+#backlight {
+  color: @yellow;
+}
+#battery {
+  border-radius: 0;
+}
+
+/* Audio */
+#pulseaudio {
+  color: @text;
+  border-radius: 1rem 0.4rem 0.4rem 1rem;
+  margin-left: 1rem;
+}
+/* Window and scratchpad */
+#scratchpad {
+  border-radius: 1rem 0rem 0rem 1rem;
+}
+#window {
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+/* Network */
+#network {
+  background-color: @surface0;
+  border-radius: 0.4rem 1rem 1rem 0.4rem;
+}
+/* CPU Memory and Temperature */
+#cpu {
+  background-color: @mauve;
+  color: @crust;
+  border-radius: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+#memory {
+  background-color: @sky;
+  color: @crust;
+  border-radius: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+#temperature {
+  background-color: @red;
+  color: @crust;
+  border-radius: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+/* Language */
+/* #language { */
+/*   background-image: url("earth-icon.png"); */
+/*   background-position: 0.15em center; */
+/*   background-repeat: no-repeat; */
+/*   background-size: 1.4em; */
+/* } */
