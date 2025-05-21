@@ -5,7 +5,10 @@ profile home {
 output eDP-1 disable
 output "BNQ BenQ LCD M3J03601SL0" scale 2
 }
-
+profile office{
+output eDP-1 disable
+output "Lenovo Group Limited T27p-30 V5MPF468" scale 2
+}
 profile external {
     output eDP-1 disable
     output DP-3 scale 2
